@@ -32,7 +32,7 @@ Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 
 ### Tier 2 — Digital Assistant
 
-*Live demo link coming soon.*
+[Launch the Tier 2 Live Demo](https://script.google.com/macros/s/AKfycbzHA1hEQG1uzgs-h00ZmAQGTkRIT5WQPZHGFfTCK64hJqqz1HxRP3n4q0osZrGKrxCh/exec)
 
 Board activity, meeting preparation, Drive workflows, Gmail follow-up support, and AI-assisted drafting.
 
