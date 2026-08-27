@@ -20,6 +20,30 @@ This project is intentionally built as a **working demonstration rather than a s
 
 ---
 
+## Live Demos
+
+Explore the progression from administrative automation to a full AI-assisted operations platform.
+
+### Tier 1 — Administrative Support
+
+[Launch the Tier 1 Live Demo](https://script.google.com/macros/s/AKfycbwtimTG60KODmNClfkL-LYbAotMx_QNu8fdkX5fKsOJJe7Z1Nzx_9d6vHuErfDB5Qvd/exec)
+
+Daily schedule, upcoming events, action items, and an AI-generated daily brief.
+
+### Tier 2 — Digital Assistant
+
+*Live demo link coming soon.*
+
+Board activity, meeting preparation, Drive workflows, Gmail follow-up support, and AI-assisted drafting.
+
+### Tier 3 — AI Operations Assistant
+
+[Launch the Tier 3 Live Demo](https://script.google.com/macros/s/AKfycbyHz9Rta7iaIPrwUas05ipsEZWv-KyrVNp3SLbsqIrSCAmaJq_aGHmJL21rpfkgHys7TQ/exec)
+
+The full operations workflow, including AI-assisted daily briefs, membership and event operations, document generation, and the Ask the Assistant interface.
+
+---
+
 ## What This Project Demonstrates
 
 The project is designed to showcase practical automation capabilities for a small organization or administrative team:
