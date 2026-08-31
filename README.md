@@ -26,19 +26,19 @@ Explore the progression from administrative automation to a full AI-assisted ope
 
 ### Tier 1 — Administrative Support
 
-[Launch the Tier 1 Live Demo](https://script.google.com/macros/s/AKfycbwtimTG60KODmNClfkL-LYbAotMx_QNu8fdkX5fKsOJJe7Z1Nzx_9d6vHuErfDB5Qvd/exec)
+[Demo Comming Soon]
 
 Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 
 ### Tier 2 — Digital Assistant
 
-[Launch the Tier 2 Live Demo](https://script.google.com/macros/s/AKfycbzHA1hEQG1uzgs-h00ZmAQGTkRIT5WQPZHGFfTCK64hJqqz1HxRP3n4q0osZrGKrxCh/exec)
+[Demo Comming Soon]
 
 Board activity, meeting preparation, Drive workflows, Gmail follow-up support, and AI-assisted drafting.
 
 ### Tier 3 — AI Operations Assistant
 
-[Launch the Tier 3 Live Demo](https://script.google.com/macros/s/AKfycbyHz9Rta7iaIPrwUas05ipsEZWv-KyrVNp3SLbsqIrSCAmaJq_aGHmJL21rpfkgHys7TQ/exec)
+[Demo Comming Soon]
 
 The full operations workflow, including AI-assisted daily briefs, membership and event operations, document generation, and the Ask the Assistant interface.
 
