@@ -147,8 +147,6 @@ The application integrates with:
 
 Each tier is implemented as an independent **Google Apps Script** project and deployed as a web application.
 
-The repository uses `clasp` for local development and deployment.
-
 ### AI Layer
 
 AI capabilities are used for:
@@ -183,63 +181,6 @@ Sample data can include:
 | Event-announcement template | Google Docs | 3 |
 
 Each tier contains configuration files that identify the relevant Google Workspace resources.
-
----
-
-## Project Structure
-
-    ├── README.md
-    │
-    ├── tier1/
-    │   ├── src/
-    │   ├── templates/
-    │   ├── package.json
-    │   └── .clasp.json.example
-    │
-    ├── tier2/
-    │   ├── src/
-    │   ├── templates/
-    │   ├── package.json
-    │   └── .clasp.json.example
-    │
-    └── tier3/
-        ├── src/
-        ├── templates/
-        ├── package.json
-        └── .clasp.json.example
-
-Each tier is independently deployable and has its own Apps Script project.
-
----
-
-## Deployment
-
-### Prerequisites
-
-- Node.js 18+
-- A Google account
-- An Anthropic API key for AI-enabled features
-- `clasp` for Apps Script deployment
-
-Install `clasp` with:
-
-    npm install -g @google/clasp
-    clasp login
-
-### Basic Deployment Flow
-
-For each tier:
-
-    cd tier1
-    clasp create --title "Dashboard Demo — Tier 1" --type standalone
-    clasp push
-    clasp open
-
-Then configure the Google Workspace resource IDs in `Config.gs`, configure the required script properties, create the refresh trigger, and deploy the project as a web app.
-
-Each tier has its own Apps Script project and deployment.
-
-> **Security note:** API credentials should be stored using an appropriate secret or script-property mechanism and should never be committed to source control.
 
 ---
 
