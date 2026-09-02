@@ -25,7 +25,7 @@ This project is intentionally built as a **working demonstration rather than a s
 Explore the progression from administrative automation to a full AI-assisted operations platform.
 
 ### Tier 1 — Administrative Support 
-[Live Demo](https://script.google.com/macros/s/AKfycbwtimTG60KODmNClfkL-LYbAotMx_QNu8fdkX5fKsOJJe7Z1Nzx_9d6vHuErfDB5Qvd/exec)
+[Live Demo](https://script.google.com/macros/s/AKfycbx_Uzeo52VR3qMEDFSVjPp80PbIUXuzNK0yATK7Gu51Ql66PPEZLjS63mVoZ9Wpj-M/exec)
 
 Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 
