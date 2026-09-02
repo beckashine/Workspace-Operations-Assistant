@@ -26,7 +26,7 @@ Explore the progression from administrative automation to a full AI-assisted ope
 
 ### Tier 1 — Administrative Support
 
-[Live Demo][https://script.google.com/macros/s/AKfycbwtimTG60KODmNClfkL-LYbAotMx_QNu8fdkX5fKsOJJe7Z1Nzx_9d6vHuErfDB5Qvd/exec)
+[Live Demo](https://script.google.com/macros/s/AKfycbwtimTG60KODmNClfkL-LYbAotMx_QNu8fdkX5fKsOJJe7Z1Nzx_9d6vHuErfDB5Qvd/exec)
 
 Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 
