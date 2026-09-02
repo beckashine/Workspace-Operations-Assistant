@@ -35,8 +35,7 @@ Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 Board activity, meeting preparation, Drive workflows, Gmail follow-up support, and AI-assisted drafting.
 
 ### Tier 3 — AI Operations Assistant
-
-[Demo Comming Soon]
+[Live Demo](https://script.google.com/macros/s/AKfycbz9peg0bqB8rD_S9yWzpqcjbrzh_S7REuXG2JXoHozJc1htZniE1ve4edBgtZyBR90JCw/exec)
 
 The full operations workflow, including AI-assisted daily briefs, membership and event operations, document generation, and the Ask the Assistant interface.
 
