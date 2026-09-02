@@ -10,9 +10,9 @@ It demonstrates three implementation levels:
 
 | Tier | Solution | What it demonstrates |
 |---|---|---|
-| **Tier 1** | Administrative Support | Daily schedule, upcoming events, action items, and an AI-generated daily brief |
-| **Tier 2** | Digital Assistant | Tier 1 plus board activity, meeting preparation, Drive workflows, and Gmail follow-up support |
-| **Tier 3** | AI Operations Assistant | Tier 2 plus membership operations, festival workflows, document drafting, Drive organization, and AI-assisted Q&A |
+| **1** | Administrative Support | Daily schedule, upcoming events, action items, and an AI-generated daily brief |
+| **2** | Digital Assistant | Tier 1 plus board activity, meeting preparation, Drive workflows, and Gmail follow-up support |
+| **3** | AI Operations Assistant | Tier 2 plus membership operations, festival workflows, document drafting, Drive organization, and AI-assisted Q&A |
 
 \*Pricing shown here reflects the project configuration and is intended for demonstration purposes.
 
@@ -30,7 +30,7 @@ Explore the progression from administrative automation to a full AI-assisted ope
 Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 
 ### Tier 2 — Digital Assistant 
-[Live Demo](https://script.google.com/macros/s/AKfycbxNF53aBccsHn2ufN9WKe4eKQaU1w7E9cNu_8o_7atSASszSf3toe7Op0hyk4mywHnx/exec)
+[Live Demo](https://script.google.com/macros/s/AKfycbza58U0hrk-mmV05r9mU2w7_wBEBr9aWrLYpXbWoq6XLT0Nw_kIHqSrWPkudD5NTRam/exec)
 
 Board activity, meeting preparation, Drive workflows, Gmail follow-up support, and AI-assisted drafting.
 
