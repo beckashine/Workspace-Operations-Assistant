@@ -1,278 +1,205 @@
 # Google Workspace Operations Dashboard
 
-> A three-tier Google Workspace automation demo designed to show how administrative work can evolve from simple workflow automation into an AI-assisted operations layer.
+**AI-Assisted Operations & Technical Implementation**
 
-## Overview
+## The Project
 
-The **Google Workspace Operations Dashboard** is a reusable portfolio and sales demonstration project built with Google Apps Script and Google Workspace services.
+The Google Workspace Operations Dashboard is a working automation project designed around a common business requirement: **give an administrative team one place to understand what needs attention and reduce repetitive operational work.**
 
-It demonstrates three implementation levels:
+I designed the project as a three-tier progression, starting with basic administrative visibility and gradually adding workflow automation and AI-assisted operations.
 
-| Tier | Solution | What it demonstrates |
-|---|---|---|
-| **1** | Administrative Support | Daily schedule, upcoming events, action items, and an AI-generated daily brief |
-| **2** | Digital Assistant | Tier 1 plus board activity, meeting preparation, Drive workflows, and Gmail follow-up support |
-| **3** | AI Operations Assistant | Tier 2 plus membership operations, festival workflows, document drafting, Drive organization, and AI-assisted Q&A |
-
-\*Pricing shown here reflects the project configuration and is intended for demonstration purposes.
-
-This project is intentionally built as a **working demonstration rather than a static mockup**. Data is pulled from real Google Workspace services and populated with sample content, allowing each tier to demonstrate an actual workflow from data retrieval through user-facing output.
-
----
+The goal was not simply to build a dashboard. It was to demonstrate how I would take an operational requirement, break it into manageable pieces, connect the systems needed to support it, and progressively expand the solution as business needs grow.
 
 ## Live Demos
 
 Explore the progression from administrative automation to a full AI-assisted operations platform.
 
-### Tier 1 — Administrative Support 
-[Live Demo](https://script.google.com/macros/s/AKfycbx_Uzeo52VR3qMEDFSVjPp80PbIUXuzNK0yATK7Gu51Ql66PPEZLjS63mVoZ9Wpj-M/exec)
+### Tier 1 — Administrative Support
+
+[**Live Demo →**](https://script.google.com/macros/s/AKfycbx_Uzeo52VR3qMEDFSVjPp80PbIUXuzNK0yATK7Gu51Ql66PPEZLjS63mVoZ9Wpj-M/exec)
 
 Daily schedule, upcoming events, action items, and an AI-generated daily brief.
 
-### Tier 2 — Digital Assistant 
-[Live Demo](https://script.google.com/macros/s/AKfycbza58U0hrk-mmV05r9mU2w7_wBEBr9aWrLYpXbWoq6XLT0Nw_kIHqSrWPkudD5NTRam/exec)
+### Tier 2 — Digital Assistant
+
+[**Live Demo →**](https://script.google.com/macros/s/AKfycbza58U0hrk-mmV05r9mU2w7_wBEBr9aWrLYpXbWoq6XLT0Nw_kIHqSrWPkudD5NTRam/exec)
 
 Board activity, meeting preparation, Drive workflows, Gmail follow-up support, and AI-assisted drafting.
 
-### Tier 3 — AI Operations Assistant
-[Live Demo](https://script.google.com/macros/s/AKfycbz9peg0bqB8rD_S9yWzpqcjbrzh_S7REuXG2JXoHozJc1htZniE1ve4edBgtZyBR90JCw/exec)
+### Tier 3 — AI Operations Assistant (In Progress)
+
+[**Live Demo →**](https://script.google.com/macros/s/AKfycbz9peg0bqB8rD_S9yWzpqcjbrzh_S7REuXG2JXoHozJc1htZniE1ve4edBgtZyBR90JCw/exec)
 
 The full operations workflow, including AI-assisted daily briefs, membership and event operations, document generation, and the Ask the Assistant interface.
 
----
+## My Process
+
+I approached the project as an implementation from requirements through delivery:
+
+**Understand → Plan → Design → Implement → Test → Troubleshoot → Validate → Deliver**
+
+I used AI-assisted development to help turn the project plan and requirements into working Google Apps Script applications.
+
+My responsibility was determining what the solution needed to accomplish, planning how the different Google Workspace services should work together, directing the implementation, testing the workflows, troubleshooting problems, and validating the finished demonstrations.
+
+## The Three-Tier Approach
+
+The project demonstrates how a solution can evolve as requirements become more sophisticated.
+
+| Tier  | Focus                   | What It Provides                                                                              |
+| ----- | ----------------------- | --------------------------------------------------------------------------------------------- |
+| **1** | Administrative Support  | Daily schedule, upcoming events, action items, and an AI-generated daily brief                |
+| **2** | Digital Assistant       | Tier 1 plus board activity, meeting preparation, Drive workflows, and Gmail follow-up support |
+| **3** | AI Operations Assistant | Tier 2 plus membership operations, event workflows, document drafting, and AI-assisted Q&A    |
+
+Each tier is a working implementation rather than a static mockup. The dashboards retrieve information from configured Google Workspace resources and use that information to produce operational outputs.
+
+## Integrations
+
+The application connects multiple Google Workspace services to support the operational workflows:
+
+| Service             | Purpose                                                                    |
+| ------------------- | -------------------------------------------------------------------------- |
+| **Google Calendar** | Schedules and upcoming events                                              |
+| **Google Sheets**   | Action items, board activity, membership information, and operational data |
+| **Google Drive**    | Meeting materials and operational documents                                |
+| **Gmail**           | Follow-up workflows and AI-generated drafts                                |
+| **Google Docs**     | Reusable document and communication templates                              |
+
+The project also uses AI capabilities to summarize information, generate proposed communications, and answer operational questions using the configured business data.
+
+### Deployment
+
+Each tier is deployed as a **Google Apps Script web application**.
+
+## Security & Control
+
+Security was considered throughout the implementation, particularly around API credentials and AI-generated communications.
+
+### API Key Protection
+
+The Anthropic API key is stored using **Google Apps Script Script Properties** rather than being kept in the application source code.
+
+The implementation uses `PropertiesService.getScriptProperties()` to retrieve the API key when it is needed. The key is entered during the initial setup, stored separately from the source code, and then removed from the setup function.
+
+This keeps the credential out of the application's source code and reduces the risk of accidentally exposing the API key when the project source is shared.
+
+### Human-in-the-Loop AI
+
+AI-generated emails and announcements are created as **Gmail drafts rather than being sent automatically**.
+
+The workflow is:
+
+**Gather Information → Generate Draft → Human Review → Human Sends**
+
+This allows automation to reduce repetitive work without allowing AI to independently send external communications.
+
+### Google Cloud API Enablement & Access Controls
+
+Google Cloud Console was used to configure the Google Cloud project supporting the application.
+
+I used the **Google Cloud Console API Library** to identify and enable the APIs required by the project. APIs were enabled at the project level rather than assuming every service was available by default. Google documents this as the standard process for making Cloud APIs available to an application.
+
+I also used the Google Cloud project configuration to manage API access and project-level controls, including reviewing which services were enabled and managing the credentials and permissions associated with the project.
+
+This provided a controlled boundary for the application's Google Cloud services, while Google Apps Script handled the application workflows and Google Workspace authorization.
+
+The implementation approach was:
+
+**Google Cloud Project → Enable Required APIs → Configure Access & Permissions → Apps Script → Google Workspace Services**
+
+## Challenges & Troubleshooting
+
+During development, I worked through issues involving Google Workspace services, application behavior, permissions, data retrieval, and workflow execution.
+
+I used:
+
+* Testing and execution logs
+* Error messages
+* Google documentation
+* Research
+* AI-assisted troubleshooting
+* Repeated validation of individual workflows
+
+Rather than treating errors as failures of the overall project, I used them to identify where the implementation or configuration needed to change.
+
+This was especially important when working across multiple Google Workspace services, where a problem in one part of the workflow could affect the final dashboard or automation.
 
 ## What This Project Demonstrates
 
-The project is designed to showcase practical automation capabilities for a small organization or administrative team:
-
-- **Google Apps Script development**
-- **Google Workspace API/service integration**
-- **Calendar, Sheets, Drive, Gmail, and Docs workflows**
-- **Scheduled automation and refresh triggers**
-- **AI-generated summaries and drafts**
-- **Human-in-the-loop AI workflows**
-- **Structured operational data**
-- **Progressive solution architecture**
-- **Reusable configuration-driven deployments**
-
----
-
-## Three-Tier Architecture
-
-Each tier is a standalone Google Apps Script web application. The tiers build progressively on the capabilities demonstrated in the previous level.
-
-### Tier 1: Administrative Support
-
-**Focus:** Give an administrator one place to see what matters today.
-
-Features include:
-
-- Today's calendar schedule
-- Upcoming events
-- Action-item tracking
-- AI-generated daily brief
-- Automated refresh
-
-**Value demonstrated:** Consolidating routine administrative information into a single operational view.
-
----
-
-### Tier 2: Digital Assistant
-
-**Focus:** Move beyond visibility into workflow assistance.
-
-Tier 2 includes everything in Tier 1, plus:
-
-- Board activity
-- Meeting-preparation information
-- Google Drive document retrieval
-- Gmail follow-up tracking
-- **Prepare Board Meeting** workflow
-- AI-assisted follow-up drafting
-
-**Value demonstrated:** Connecting information across Google Workspace and turning it into actionable workflows.
-
----
-
-### Tier 3: AI Operations Assistant
-
-**Focus:** Add AI-assisted operational workflows across the organization.
-
-Tier 3 includes everything in Tier 2, plus:
-
-- Membership information
-- Festival operations
-- Welcome-email drafting
-- Event-announcement drafting
-- Drive organization workflows
-- **Ask the Assistant** conversational interface
-
-**Value demonstrated:** Using AI as an operational layer on top of existing business data and workflows.
-
----
-
-## Human-in-the-Loop AI
-
-A core design decision in this project is that **AI-generated communications are never sent automatically**.
-
-Follow-up replies, event announcements, and welcome emails are created as **Gmail drafts** for human review.
-
-This approach provides a practical balance between automation and control:
-
-1. The system gathers relevant information.
-2. AI generates a proposed communication.
-3. The user reviews the draft.
-4. The user decides whether and when to send it.
-
-This keeps communication decisions with the organization while still eliminating much of the repetitive drafting work.
-
----
-
-## Technical Implementation
-
-### Google Workspace
-
-The application integrates with:
-
-- **Google Calendar** for schedules and events
-- **Google Sheets** for operational data and action items
-- **Google Drive** for meeting and operational documents
-- **Gmail** for follow-up workflows and draft generation
-- **Google Docs** for reusable document content
-
-### Application Layer
-
-Each tier is implemented as an independent **Google Apps Script** project and deployed as a web application.
-
-### AI Layer
-
-AI capabilities are used for:
-
-- Daily operational summaries
-- Workflow-generated checklists
-- Follow-up draft generation
-- Event announcements
-- Welcome emails
-- Conversational operational questions
-
-The AI layer operates on information retrieved from the configured Google Workspace environment rather than relying on hardcoded demonstration responses.
-
----
-
-## Data & Configuration
-
-The demo uses sample Google Workspace content rather than hardcoded mock dashboard data.
-
-Sample data can include:
-
-| Data | Source | Tier |
-|---|---|---|
-| Action items | Google Sheets | 1+ |
-| Calendar events | Google Calendar | 1+ |
-| Board activity | Google Sheets | 2+ |
-| Meeting-preparation documents | Google Drive | 2+ |
-| Follow-up threads | Gmail | 2+ |
-| Membership records | Google Sheets | 3 |
-| Festival operations | Google Sheets | 3 |
-| Welcome-email template | Google Docs | 3 |
-| Event-announcement template | Google Docs | 3 |
-
-Each tier contains configuration files that identify the relevant Google Workspace resources.
-
----
-
-## Demo Walkthrough
-
-A typical demonstration follows the progression of the three tiers.
-
-### 1. Start with Tier 1
-
-Show how a single dashboard brings together:
-
-- Today's schedule
-- Upcoming events
-- Action items
-- The AI daily brief
-
-The focus is on **visibility and administrative efficiency**.
-
-### 2. Move to Tier 2
-
-Show how the dashboard expands into workflow support:
-
-- Board activity
-- Meeting preparation
-- Follow-up management
-- Gmail draft generation
-
-The **Prepare Board Meeting** workflow demonstrates how information from multiple Workspace sources can be assembled into an actionable output.
-
-### 3. Finish with Tier 3
-
-Demonstrate the broader AI operations layer:
-
-- Ask the Assistant
-- Membership operations
-- Festival operations
-- Welcome-email drafting
-- Event-announcement drafting
-
-The progression illustrates how the same underlying concept can scale from a simple administrative dashboard into a more capable operational assistant.
-
----
-
-## Testing
-
-Before demonstrating a deployment:
-
-- Run the individual data-retrieval functions from the Apps Script editor.
-- Review execution logs for errors.
-- Load the deployed web application and verify that all sections populate.
-- Test each workflow button.
-- Confirm AI-generated communications appear in **Gmail Drafts** rather than being sent automatically.
-- Verify that sample data is being retrieved from the intended Google Workspace resources.
-
----
+This project demonstrates my ability to:
+
+* Understand an operational requirement
+* Break a larger problem into progressive implementation tiers
+* Translate requirements into a project plan
+* Connect multiple business systems
+* Work with APIs and service integrations
+* Design workflows around real business processes
+* Use AI as an operational capability
+* Keep humans in control of consequential actions
+* Troubleshoot technical problems
+* Test and validate integrations
+* Use AI-assisted development to execute an implementation
+* Deliver a working demonstration rather than a static concept
+
+## Implementation Flow
+
+```text
+Business Requirement
+        ↓
+Understand & Define Requirements
+        ↓
+Project Plan
+        ↓
+Design the Workflow
+        ↓
+Connect Google Workspace Services
+        ↓
+Implement with AI-Assisted Development
+        ↓
+Test & Troubleshoot
+        ↓
+Validate Results
+        ↓
+Working Operations Dashboard
+```
+
+## From Automation to AI-Assisted Operations
+
+The three tiers demonstrate how I think about expanding a technical solution.
+
+**Tier 1:**
+Bring information together so the user can see what matters.
+
+**Tier 2:**
+Connect that information to workflows that help the user take action.
+
+**Tier 3:**
+Add AI to reduce repetitive work and provide an operational interface while keeping the user in control.
+
+This progression reflects an implementation approach I would use with a real organization: **start with the business problem, build what is needed, validate it, and expand the solution as requirements grow.**
+
+## Testing & Validation
+
+Before demonstrating each deployment, I tested the individual components and the completed workflows.
+
+Testing included:
+
+* Verifying Google Workspace data retrieval
+* Reviewing Apps Script execution logs
+* Testing dashboard sections
+* Testing workflow actions
+* Validating AI-generated outputs
+* Confirming communications were created as Gmail drafts
+* Verifying the application was retrieving data from the intended resources
+* Testing the deployed web applications
 
 ## Portfolio Context
 
-This project demonstrates a practical approach to **AI-enabled business automation**:
+This project demonstrates my approach to **technical implementation and AI-enabled business automation**.
 
-> **Connect existing business data → automate repetitive workflows → add AI where it creates leverage → keep humans in control of consequential actions.**
+The technology is only one part of the project.
 
-The three-tier structure also demonstrates an important implementation principle: automation does not have to begin as a massive transformation project.
+The larger demonstration is the ability to take a business requirement, determine what systems and workflows are needed, coordinate those moving pieces, work through technical problems, and deliver a functioning implementation.
 
-A solution can start with a focused administrative workflow and progressively add integrations, intelligence, and operational capabilities as the organization's needs grow.
-
----
-
-## Key Takeaways
-
-This project demonstrates experience with:
-
-- **Business process automation**
-- **Google Workspace integrations**
-- **Google Apps Script**
-- **REST/API-oriented workflows**
-- **AI-assisted operations**
-- **Human-in-the-loop system design**
-- **Data aggregation across business systems**
-- **Workflow orchestration**
-- **Configuration-driven deployments**
-- **Progressive solution architecture**
-
-The project is intentionally designed to show both the **technical implementation** and the **business reasoning behind the automation**.
-
----
-
-## Disclaimer
-
-This repository is a **demonstration project using sample data and placeholder organizational branding**. It is not a production client deliverable.
-
-All sample Google Workspace resources should be created in a dedicated demo environment or test account before deployment.
-
----
-
-## Author
-
-Built as a portfolio demonstration of practical **AI operations, cybersecurity-adjacent automation, and Google Workspace workflow engineering**.
+**Understand → Plan → Implement → Test → Troubleshoot → Validate → Deliver**
